@@ -46,7 +46,7 @@ systemctl status docker
 docker info | grep -i cgroup
 
 Add the Kubernetes repo.
-
+```
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
@@ -57,7 +57,7 @@ repo_gpgcheck=0
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
       https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
-
+```
 
 ## Install Kubernetes. 
 

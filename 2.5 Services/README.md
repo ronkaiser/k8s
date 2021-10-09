@@ -17,3 +17,4 @@ spec:
   - protocol: TCP
     port: 32768
     targetPort: 80
+    

@@ -5,7 +5,7 @@ Services
 In this lesson, we will look at services in Kubernetes and how they allow us to provide high availability. We will see how labels are used to connect pods to services, and we will take a peek into DNS to see how using a service allows us to resolve a name to access groups of pods.
 
 service-example.yaml:
-
+```
 kind: Service
 apiVersion: v1
 metadata:
@@ -17,4 +17,4 @@ spec:
   - protocol: TCP
     port: 32768
     targetPort: 80
-    
+ ```
